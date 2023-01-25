@@ -30,7 +30,7 @@ Paragraph default: 1.6
 - Shades:
 - Accents:
 #51cf66
-- Greys: #555 / #333
+- Greys: #555 / #333 / #6f6f6f
 
 
 --- 05 Shadows
@@ -65,8 +65,6 @@ body {
   color: #555;
 }
 
-
-
 /**********************/
 /* General Reusable componets */
 /**********************/
@@ -91,7 +89,7 @@ body {
   margin-bottom: 9.6rem;
 }
 
-.heading-tertiary{
+.heading-tertiary {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
@@ -140,9 +138,21 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
-.margin-right-sm {
-  margin-right: 1.6rem !important;
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
 }
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -167,9 +177,24 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.grid--center-v{
+.grid--center-v {
   align-items: center;
 }
+
+/* Helper Setting classes */
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
 strong {
   font-weight: 500;
 }

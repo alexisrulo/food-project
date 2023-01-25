@@ -127,10 +127,10 @@ Recipe directory
 Help center
 Privacy & terms
 
-
 ######
 
 ## Sections
+
 - Navigation
 - Hero
 - Featured in

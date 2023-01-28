@@ -9,6 +9,7 @@
   background-color: #fdf2e9;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 .logo {
   height: 2.2rem;
@@ -51,6 +52,45 @@
   background-color: #cf711f;
 }
 
+/* MOBILE */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* Sticky Navigation */
+
+.sticky .header{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  z-index: 999;
+}
+
+.sticky .section-hero{
+  margin-top: 9.6rem;
+}
+
 /**********************/
 /* Hero Section */
 /**********************/
@@ -59,6 +99,7 @@
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
@@ -127,8 +168,10 @@
   color: #888;
 }
 .logos {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
 }
 
 .logos img {
@@ -458,7 +501,6 @@
       rgba(231, 127, 35, 0.35)
     ),
     url("../img/eating.jpg");
-  height: 50rem;
   background-size: cover;
   background-position: center;
 }

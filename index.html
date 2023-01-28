@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta
+      name="description"
+      content="Omnifood is a AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tasted and nutritional needs"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./img/favicon.png" />
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanisfest" />
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -20,9 +30,11 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
       async
     ></script>
+    <script src="./js/script.js" async></script>
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Omnifood</title>
+    <link rel="stylesheet" href="./css/queries.css" />
+    <title>Omnifood &mdash; Never cook again!</title>
   </head>
   <body>
     <header class="header">
@@ -44,6 +56,10 @@
           </li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -75,12 +91,27 @@
               </p>
             </div>
           </div>
+          
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
-              class="hero-img"
-              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-            />
+              <picture>
+                <source srcset="img/hero.webp" type="image/webp">
+                <source srcset="img/hero-min.png" type="image/png">
+                <img
+                src="img/hero-min.png"
+                class="hero-img"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                />
+              </picture>
+                <!-- <img
+                src="img/hero.webp"
+                class="hero-img"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                />
+                <img
+                src="img/hero-min.png"
+                class="hero-img"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                /> -->
           </div>
         </div>
       </section>
